@@ -68,14 +68,6 @@
 #define KAIZEN_kaizen_raw_reliable_frame_time_scope_H
 
 
-#if defined(KAIZEN_USE_WIN32_QUERY_PERFORMANCE_COUNTER)
-/* Nothing to do */
-#else
-#   include <kaizen/kaizen_stdint.h>
-#endif
-
-
-
 #if defined(__cplusplus)
 extern "C" {
 #endif

@@ -72,12 +72,11 @@
 
 
 #include <kaizen/kaizen_stddef.h>
-#include <kaizen/kaizen_stdint.h>
 
 
 
 #if defined(KAIZEN_USE_APPLE_MACH_ABSOLUTE_TIME)
-#   // Nothing to do.
+#   include <stdint.h>
 #elif defined(KAIZEN_USE_POSIX_GETTIMEOFDAY)
 #   error Unsupported platform.
 #elif defined(KAIZEN_USE_POSIX_CLOCK_GETTIME)

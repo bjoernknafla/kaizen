@@ -20,7 +20,6 @@
 		32A6A7AF116E377000C528CA /* kaizen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* kaizen.framework */; };
 		32A6A7B1116E37AD00C528CA /* kaizen_unit_test_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32A6A7B0116E37AD00C528CA /* kaizen_unit_test_main.cpp */; };
 		32A6A7B4116E3BD200C528CA /* kaizen_raw_frame_time_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32A6A7B3116E3BD200C528CA /* kaizen_raw_frame_time_test.cpp */; };
-		32C0A32D1170BDC700654B65 /* kaizen_stdint.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C0A32C1170BDC700654B65 /* kaizen_stdint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +55,6 @@
 		32A6A7AA116E374000C528CA /* libUnitTest++.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUnitTest++.a"; sourceTree = UNITTESTCPP; };
 		32A6A7B0116E37AD00C528CA /* kaizen_unit_test_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kaizen_unit_test_main.cpp; sourceTree = "<group>"; };
 		32A6A7B3116E3BD200C528CA /* kaizen_raw_frame_time_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kaizen_raw_frame_time_test.cpp; sourceTree = "<group>"; };
-		32C0A32C1170BDC700654B65 /* kaizen_stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kaizen_stdint.h; sourceTree = "<group>"; };
 		32FE2D94117A029900C904D4 /* kaizen_raw_frame_time_posix_clock_gettime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kaizen_raw_frame_time_posix_clock_gettime.c; sourceTree = "<group>"; };
 		32FE4E68117B68F700C904D4 /* COPYRIGHT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COPYRIGHT.txt; path = ../../../COPYRIGHT.txt; sourceTree = SOURCE_ROOT; };
 		32FE4E69117B68F700C904D4 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = ../../../README.markdown; sourceTree = SOURCE_ROOT; };
@@ -197,7 +195,6 @@
 			children = (
 				329E93EF116F3E19004E4541 /* kaizen.h */,
 				329E93F1116F3E5F004E4541 /* kaizen_raw.h */,
-				32C0A32C1170BDC700654B65 /* kaizen_stdint.h */,
 				329E93F7116F41ED004E4541 /* kaizen_stddef.h */,
 				324644A1117223C500983408 /* kaizen_raw_reliable_frame_time_scope.h */,
 				326377371173173B00583E56 /* kaizen_raw_reliable_frame_time_scope_generic.c */,
@@ -284,7 +281,6 @@
 				329E93F2116F3E5F004E4541 /* kaizen_raw.h in Headers */,
 				329E93F6116F3E92004E4541 /* kaizen_raw_frame_time.h in Headers */,
 				329E93F8116F41ED004E4541 /* kaizen_stddef.h in Headers */,
-				32C0A32D1170BDC700654B65 /* kaizen_stdint.h in Headers */,
 				324644A2117223C500983408 /* kaizen_raw_reliable_frame_time_scope.h in Headers */,
 				3263773411730B9600583E56 /* kaizen_internal_inline_macros.h in Headers */,
 				3263773511730B9600583E56 /* kaizen_internal_inline_macros_undef.h in Headers */,
