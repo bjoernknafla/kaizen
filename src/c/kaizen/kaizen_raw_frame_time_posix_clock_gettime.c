@@ -39,6 +39,12 @@
  * See http://www.opengroup.org/onlinepubs/007908799/xsh/clock_gettime.html
  * See http://www.wand.net.nz/~smr26/wordpress/2009/01/19/monotonic-time-in-mac-os-x/
  * See http://www.opengroup.org/onlinepubs/007908799/xsh/realtime.html
+ * See http://www.guyrutenberg.com/2007/09/22/profiling-code-using-clock_gettime/
+ * See http://www.helsinki.fi/atk/unix/dec_manuals/DOC_40D/APS33DTE/DOCU_007.HTM
+ * See http://fixunix.com/unix/84794-clock_monotonic.html
+ * See http://lists.uclibc.org/pipermail/uclibc/2008-June/040472.html
+ * See http://lists.freebsd.org/pipermail/freebsd-threads/2005-June/003123.html
+ * See http://www.opengroup.org/onlinepubs/000095399/functions/clock_getres.html
  *
  * To use clock_gettime and clock_getres link against librt.
  */
