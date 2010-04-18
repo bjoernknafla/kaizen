@@ -1,0 +1,19 @@
+//
+//  kaizen_common.xcconfig
+//  kaizen
+//
+//  Created by Björn Knafla on 08.04.2010.
+//  Copyright 2010 Bjoern Knafla Parallelization + AI + Gamedev Consulting. All rights reserved.
+//
+
+#include "compiler_warnings"
+
+ALWAYS_SEARCH_USER_PATHS = NO
+
+KAIZEN_HEADER_PATHS = "$(SRCROOT)/../../../src/c/" "$(SRCROOT)/../../../src/cpp/"
+
+KAIZEN_GCC_PREPROCESSOR_DEFINITIONS = KAIZEN_USE_APPLE_MACH_ABSOLUTE_TIME
+// KAIZEN_USE_APPLE_MACH_ABSOLUTE_TIME
+// KAIZEN_USE_POSIX_GETTIMEOFDAY
+// KAIZEN_USE_POSIX_CLOCK_GETTIME
+// KAIZEN_USE_WIN32_QUERY_PERFORMANCE_COUNTER

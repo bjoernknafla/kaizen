@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		324644A2117223C500983408 /* kaizen_raw_reliable_frame_time_scope.h in Headers */ = {isa = PBXBuildFile; fileRef = 324644A1117223C500983408 /* kaizen_raw_reliable_frame_time_scope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3263773411730B9600583E56 /* kaizen_internal_inline_macros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3263773211730B9600583E56 /* kaizen_internal_inline_macros.h */; };
+		3263773511730B9600583E56 /* kaizen_internal_inline_macros_undef.h in Headers */ = {isa = PBXBuildFile; fileRef = 3263773311730B9600583E56 /* kaizen_internal_inline_macros_undef.h */; };
+		326377381173173B00583E56 /* kaizen_raw_reliable_frame_time_scope_generic.c in Sources */ = {isa = PBXBuildFile; fileRef = 326377371173173B00583E56 /* kaizen_raw_reliable_frame_time_scope_generic.c */; };
+		329E93F0116F3E19004E4541 /* kaizen.h in Headers */ = {isa = PBXBuildFile; fileRef = 329E93EF116F3E19004E4541 /* kaizen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		329E93F2116F3E5F004E4541 /* kaizen_raw.h in Headers */ = {isa = PBXBuildFile; fileRef = 329E93F1116F3E5F004E4541 /* kaizen_raw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		329E93F6116F3E92004E4541 /* kaizen_raw_frame_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 329E93F5116F3E92004E4541 /* kaizen_raw_frame_time.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		329E93F8116F41ED004E4541 /* kaizen_stddef.h in Headers */ = {isa = PBXBuildFile; fileRef = 329E93F7116F41ED004E4541 /* kaizen_stddef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		329E93FC116F4300004E4541 /* kaizen_raw_frame_time_apple_mach_absolute_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 329E93FA116F4300004E4541 /* kaizen_raw_frame_time_apple_mach_absolute_time.c */; };
+		32A6A7AB116E374000C528CA /* libUnitTest++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A6A7AA116E374000C528CA /* libUnitTest++.a */; };
+		32A6A7AF116E377000C528CA /* kaizen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* kaizen.framework */; };
+		32A6A7B1116E37AD00C528CA /* kaizen_unit_test_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32A6A7B0116E37AD00C528CA /* kaizen_unit_test_main.cpp */; };
+		32A6A7B4116E3BD200C528CA /* kaizen_raw_frame_time_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32A6A7B3116E3BD200C528CA /* kaizen_raw_frame_time_test.cpp */; };
+		32C0A32D1170BDC700654B65 /* kaizen_stdint.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C0A32C1170BDC700654B65 /* kaizen_stdint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32A6A7AC116E376200C528CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = kaizen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		324644A1117223C500983408 /* kaizen_raw_reliable_frame_time_scope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kaizen_raw_reliable_frame_time_scope.h; sourceTree = "<group>"; };
+		3263773211730B9600583E56 /* kaizen_internal_inline_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kaizen_internal_inline_macros.h; sourceTree = "<group>"; };
+		3263773311730B9600583E56 /* kaizen_internal_inline_macros_undef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kaizen_internal_inline_macros_undef.h; sourceTree = "<group>"; };
+		326377371173173B00583E56 /* kaizen_raw_reliable_frame_time_scope_generic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kaizen_raw_reliable_frame_time_scope_generic.c; sourceTree = "<group>"; };
+		326377391173193000583E56 /* kaizen_raw_frame_time_win32_query_performance_counter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kaizen_raw_frame_time_win32_query_performance_counter.c; sourceTree = "<group>"; };
+		3263773B1173196800583E56 /* kaizen_raw_reliable_frame_time_scope_win32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kaizen_raw_reliable_frame_time_scope_win32.c; sourceTree = "<group>"; };
+		329E93EF116F3E19004E4541 /* kaizen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kaizen.h; sourceTree = "<group>"; };
+		329E93F1116F3E5F004E4541 /* kaizen_raw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kaizen_raw.h; sourceTree = "<group>"; };
+		329E93F5116F3E92004E4541 /* kaizen_raw_frame_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kaizen_raw_frame_time.h; sourceTree = "<group>"; };
+		329E93F7116F41ED004E4541 /* kaizen_stddef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kaizen_stddef.h; sourceTree = "<group>"; };
+		329E93FA116F4300004E4541 /* kaizen_raw_frame_time_apple_mach_absolute_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kaizen_raw_frame_time_apple_mach_absolute_time.c; sourceTree = "<group>"; };
+		32A6A797116E350A00C528CA /* UnitTest++.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "UnitTest++.xcconfig"; sourceTree = "<group>"; };
+		32A6A798116E350A00C528CA /* compiler_warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = compiler_warnings.xcconfig; sourceTree = "<group>"; };
+		32A6A799116E350A00C528CA /* kaizen_unit_test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = kaizen_unit_test.xcconfig; sourceTree = "<group>"; };
+		32A6A79A116E350A00C528CA /* kaizen_common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = kaizen_common.xcconfig; sourceTree = "<group>"; };
+		32A6A79B116E350A00C528CA /* kaizen_framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = kaizen_framework.xcconfig; sourceTree = "<group>"; };
+		32A6A7A0116E36FB00C528CA /* kaizen_unit_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kaizen_unit_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A6A7AA116E374000C528CA /* libUnitTest++.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUnitTest++.a"; sourceTree = UNITTESTCPP; };
+		32A6A7B0116E37AD00C528CA /* kaizen_unit_test_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kaizen_unit_test_main.cpp; sourceTree = "<group>"; };
+		32A6A7B3116E3BD200C528CA /* kaizen_raw_frame_time_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kaizen_raw_frame_time_test.cpp; sourceTree = "<group>"; };
+		32C0A32C1170BDC700654B65 /* kaizen_stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kaizen_stdint.h; sourceTree = "<group>"; };
+		32FE2D94117A029900C904D4 /* kaizen_raw_frame_time_posix_clock_gettime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kaizen_raw_frame_time_posix_clock_gettime.c; sourceTree = "<group>"; };
+		32FE4E68117B68F700C904D4 /* COPYRIGHT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = COPYRIGHT.txt; path = ../../../COPYRIGHT.txt; sourceTree = SOURCE_ROOT; };
+		32FE4E69117B68F700C904D4 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = ../../../README.markdown; sourceTree = SOURCE_ROOT; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* kaizen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kaizen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32A6A79E116E36FB00C528CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A6A7AF116E377000C528CA /* kaizen.framework in Frameworks */,
+				32A6A7AB116E374000C528CA /* libUnitTest++.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* kaizen.framework */,
+				32A6A7A0116E36FB00C528CA /* kaizen_unit_test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* kaizen */ = {
+			isa = PBXGroup;
+			children = (
+				32A6A780116E344E00C528CA /* Sources */,
+				32FE4E64117B689000C904D4 /* Documentation */,
+				32A6A78B116E34A800C528CA /* Xcode specific */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = kaizen;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32A6A7AA116E374000C528CA /* libUnitTest++.a */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32A6A780116E344E00C528CA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32A6A781116E346A00C528CA /* src */,
+				32A6A785116E346A00C528CA /* test */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		32A6A781116E346A00C528CA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				32A6A788116E34A200C528CA /* c */,
+				32A6A78A116E34A200C528CA /* cpp */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		32A6A785116E346A00C528CA /* test */ = {
+			isa = PBXGroup;
+			children = (
+				32A6A786116E346A00C528CA /* stress_test */,
+				32A6A787116E346A00C528CA /* unit_test */,
+			);
+			name = test;
+			path = ../../../test;
+			sourceTree = SOURCE_ROOT;
+		};
+		32A6A786116E346A00C528CA /* stress_test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stress_test;
+			sourceTree = "<group>";
+		};
+		32A6A787116E346A00C528CA /* unit_test */ = {
+			isa = PBXGroup;
+			children = (
+				32A6A7B0116E37AD00C528CA /* kaizen_unit_test_main.cpp */,
+				32A6A7B3116E3BD200C528CA /* kaizen_raw_frame_time_test.cpp */,
+			);
+			path = unit_test;
+			sourceTree = "<group>";
+		};
+		32A6A788116E34A200C528CA /* c */ = {
+			isa = PBXGroup;
+			children = (
+				32A6A789116E34A200C528CA /* kaizen */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		32A6A789116E34A200C528CA /* kaizen */ = {
+			isa = PBXGroup;
+			children = (
+				329E93EF116F3E19004E4541 /* kaizen.h */,
+				329E93F1116F3E5F004E4541 /* kaizen_raw.h */,
+				32C0A32C1170BDC700654B65 /* kaizen_stdint.h */,
+				329E93F7116F41ED004E4541 /* kaizen_stddef.h */,
+				324644A1117223C500983408 /* kaizen_raw_reliable_frame_time_scope.h */,
+				326377371173173B00583E56 /* kaizen_raw_reliable_frame_time_scope_generic.c */,
+				3263773B1173196800583E56 /* kaizen_raw_reliable_frame_time_scope_win32.c */,
+				329E93F5116F3E92004E4541 /* kaizen_raw_frame_time.h */,
+				329E93FA116F4300004E4541 /* kaizen_raw_frame_time_apple_mach_absolute_time.c */,
+				32FE2D94117A029900C904D4 /* kaizen_raw_frame_time_posix_clock_gettime.c */,
+				326377391173193000583E56 /* kaizen_raw_frame_time_win32_query_performance_counter.c */,
+				3263773211730B9600583E56 /* kaizen_internal_inline_macros.h */,
+				3263773311730B9600583E56 /* kaizen_internal_inline_macros_undef.h */,
+			);
+			path = kaizen;
+			sourceTree = "<group>";
+		};
+		32A6A78A116E34A200C528CA /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		32A6A78B116E34A800C528CA /* Xcode specific */ = {
+			isa = PBXGroup;
+			children = (
+				32A6A78C116E34BE00C528CA /* Configuration files */,
+			);
+			name = "Xcode specific";
+			sourceTree = "<group>";
+		};
+		32A6A78C116E34BE00C528CA /* Configuration files */ = {
+			isa = PBXGroup;
+			children = (
+				32A6A797116E350A00C528CA /* UnitTest++.xcconfig */,
+				32A6A798116E350A00C528CA /* compiler_warnings.xcconfig */,
+				32A6A799116E350A00C528CA /* kaizen_unit_test.xcconfig */,
+				32A6A79A116E350A00C528CA /* kaizen_common.xcconfig */,
+				32A6A79B116E350A00C528CA /* kaizen_framework.xcconfig */,
+			);
+			name = "Configuration files";
+			sourceTree = "<group>";
+		};
+		32FE4E64117B689000C904D4 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				32FE4E68117B68F700C904D4 /* COPYRIGHT.txt */,
+				32FE4E69117B68F700C904D4 /* README.markdown */,
+				32FE4E65117B68A500C904D4 /* doc */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		32FE4E65117B68A500C904D4 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				32FE4E66117B68E200C904D4 /* doxygen */,
+				32FE4E67117B68E200C904D4 /* notes */,
+			);
+			name = doc;
+			path = ../../../doc;
+			sourceTree = "<group>";
+		};
+		32FE4E66117B68E200C904D4 /* doxygen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = doxygen;
+			sourceTree = "<group>";
+		};
+		32FE4E67117B68E200C904D4 /* notes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = notes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329E93F0116F3E19004E4541 /* kaizen.h in Headers */,
+				329E93F2116F3E5F004E4541 /* kaizen_raw.h in Headers */,
+				329E93F6116F3E92004E4541 /* kaizen_raw_frame_time.h in Headers */,
+				329E93F8116F41ED004E4541 /* kaizen_stddef.h in Headers */,
+				32C0A32D1170BDC700654B65 /* kaizen_stdint.h in Headers */,
+				324644A2117223C500983408 /* kaizen_raw_reliable_frame_time_scope.h in Headers */,
+				3263773411730B9600583E56 /* kaizen_internal_inline_macros.h in Headers */,
+				3263773511730B9600583E56 /* kaizen_internal_inline_macros_undef.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32A6A79F116E36FB00C528CA /* kaizen_unit_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32A6A7A9116E373400C528CA /* Build configuration list for PBXNativeTarget "kaizen_unit_test" */;
+			buildPhases = (
+				32A6A79D116E36FB00C528CA /* Sources */,
+				32A6A79E116E36FB00C528CA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32A6A7AD116E376200C528CA /* PBXTargetDependency */,
+			);
+			name = kaizen_unit_test;
+			productName = kaizen_unit_test;
+			productReference = 32A6A7A0116E36FB00C528CA /* kaizen_unit_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		8DC2EF4F0486A6940098B216 /* kaizen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "kaizen" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kaizen;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = kaizen;
+			productReference = 8DC2EF5B0486A6940098B216 /* kaizen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "kaizen" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* kaizen */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* kaizen */,
+				32A6A79F116E36FB00C528CA /* kaizen_unit_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32A6A79D116E36FB00C528CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A6A7B1116E37AD00C528CA /* kaizen_unit_test_main.cpp in Sources */,
+				32A6A7B4116E3BD200C528CA /* kaizen_raw_frame_time_test.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329E93FC116F4300004E4541 /* kaizen_raw_frame_time_apple_mach_absolute_time.c in Sources */,
+				326377381173173B00583E56 /* kaizen_raw_reliable_frame_time_scope_generic.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32A6A7AD116E376200C528CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* kaizen */;
+			targetProxy = 32A6A7AC116E376200C528CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A6A79B116E350A00C528CA /* kaizen_framework.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = kaizen;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A6A79B116E350A00C528CA /* kaizen_framework.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = kaizen;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		32A6A7A2116E36FC00C528CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A6A799116E350A00C528CA /* kaizen_unit_test.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../ForeignProjects/unittest-cpp/UnitTest++\"",
+				);
+				PRODUCT_NAME = kaizen_unit_test;
+			};
+			name = Debug;
+		};
+		32A6A7A3116E36FC00C528CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A6A799116E350A00C528CA /* kaizen_unit_test.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../ForeignProjects/unittest-cpp/UnitTest++\"",
+				);
+				PRODUCT_NAME = kaizen_unit_test;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "kaizen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "kaizen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32A6A7A9116E373400C528CA /* Build configuration list for PBXNativeTarget "kaizen_unit_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A6A7A2116E36FC00C528CA /* Debug */,
+				32A6A7A3116E36FC00C528CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,18 @@
+//
+//  kaizen_framework.xcconfig
+//  kaizen
+//
+//  Created by Björn Knafla on 08.04.2010.
+//  Copyright 2010 Bjoern Knafla Parallelization + AI + Gamedev Consulting. All rights reserved.
+//
+
+#include "kaizen_common"
+
+GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+GCC_C_LANGUAGE_STANDARD = c99
+INSTALL_PATH = @executable_path/../Frameworks
+// INSTALL_PATH = $(HOME)/Library/Frameworks
+
+GCC_PREPROCESSOR_DEFINITIONS = $(KAIZEN_GCC_PREPROCESSOR_DEFINITIONS)
+
+HEADER_SEARCH_PATHS = $(KAIZEN_HEADER_PATHS)

@@ -1,0 +1,16 @@
+
+
+//
+//  UnitTest++.xcconfig
+//  kaizen
+//
+//  Created by Björn Knafla on 08.04.2010.
+//  Copyright 2010 Bjoern Knafla Parallelization + AI + Gamedev Consulting. All rights reserved.
+//
+
+    
+// $(UNITTESTCPP is a user specific Xcode Source Tree path.
+UNITTESTCPP_ROOT_PATH = $(UNITTESTCPP)
+UNITTESTCPP_HEADER_PATH = "$(UNITTESTCPP_ROOT_PATH)/src/"
+UNITTESTCPP_LIBRARY_PATH = "$(UNITTESTCPP_ROOT_PATH)"   
+
