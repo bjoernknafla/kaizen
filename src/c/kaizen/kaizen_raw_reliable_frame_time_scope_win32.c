@@ -43,6 +43,8 @@
 
 #include <windows.h>
 
+#include <assert.h>
+#include <errno.h>
 #include <stddef.h>
 
 #include "kaizen_stddef.h"

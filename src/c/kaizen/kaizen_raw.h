@@ -35,7 +35,6 @@
 
 
 #include <kaizen/kaizen_stddef.h>
-#include <kaizen/kaizen_stdint.h>
 #include <kaizen/kaizen_raw_reliable_frame_time_scope.h>
 #include <kaizen/kaizen_raw_frame_time.h>
 

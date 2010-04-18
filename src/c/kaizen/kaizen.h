@@ -35,7 +35,6 @@
 
 
 #include <kaizen/kaizen_stddef.h>
-#include <kaizen/kaizen_stdint.h>
 
 
 #endif /* KAIZEN_kaizen_H Ü/

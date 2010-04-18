@@ -53,8 +53,8 @@
 
 
 
-inline static kaizen_internal_frame_time_convert_with_factor(struct kaizen_raw_frame_time_s const* time, double const factor, double* result);
-inline static kaizen_internal_frame_time_convert_with_factor(struct kaizen_raw_frame_time_s const* time, double const factor, double* result)
+inline static int kaizen_internal_frame_time_convert_with_factor(struct kaizen_raw_frame_time_s const* time, double const factor, double* result);
+inline static int kaizen_internal_frame_time_convert_with_factor(struct kaizen_raw_frame_time_s const* time, double const factor, double* result)
 {
     assert(NULL != time);
     assert(NULL != result);
@@ -67,8 +67,8 @@ inline static kaizen_internal_frame_time_convert_with_factor(struct kaizen_raw_f
     
     if (FALSE != errc) {
         
-        LONGLONG const freq = frequency.QuadWord;
-        LONGLONG const elapsed = time->counter.QuadWord;
+        LONGLONG const freq = frequency.QuadPart;
+        LONGLONG const elapsed = time->counter.QuadPart;
         
         /* TODO: @todo Add a cast-overflow check in debug mode.
          *             Did not add it yet as LONGLONG definition seems to be
@@ -83,7 +83,7 @@ inline static kaizen_internal_frame_time_convert_with_factor(struct kaizen_raw_f
         return_code = KAIZEN_SUCCESS;
         
     } else {
-        DWORD const last_error = GetLastError;
+        DWORD const last_error = GetLastError();
         assert(0);
         
         return_code = ENOSYS;
@@ -196,7 +196,7 @@ int kaizen_frame_time_subtract(struct kaizen_raw_frame_time_s const* later,
     assert(later->counter.QuadPart >= earlier->counter.QuadPart);
     
     LONGLONG const later_counter = later->counter.QuadPart;
-    LONGLONG const earlier_icounter = earlier->counter.QuadPart;
+    LONGLONG const earlier_counter = earlier->counter.QuadPart;
     
     LONGLONG const difference = later_counter - earlier_counter;
     
@@ -245,16 +245,16 @@ int kaizen_frame_time_aggregate(struct kaizen_raw_frame_time_s const* lhs,
     assert(lhs->counter.QuadPart >= 0);
     assert(rhs->counter.QuadPart >= 0);
     
-    uint64_t const left_counter = lhs->counter;
-    uint64_t const right_counter = rhs->counter;
+    LONGLONG const left_counter = lhs->counter.QuadPart;
+    LONGLONG const right_counter = rhs->counter.QuadPart;
     
-    uint64_t const aggregate = left_counter + right_counter;
+    LONGLONG const aggregate = left_counter + right_counter;
     
     assert(aggregate >= left_counter
            && aggregate >= right_counter
            && "Overflow");
     
-    result->counter = aggregate;
+    result->counter.QuadPart = aggregate;
     
     return KAIZEN_SUCCESS;
 }
@@ -307,7 +307,7 @@ kaizen_bool kaizen_frame_time_equal(struct kaizen_raw_frame_time_s const* lhs,
     assert(NULL != lhs);
     assert(NULL != rhs);
     
-    return lhs->counter == rhs->counter;
+    return lhs->counter.QuadPart == rhs->counter.QuadPart;
 }
 
 
@@ -318,7 +318,7 @@ kaizen_bool kaizen_frame_time_unequal(struct kaizen_raw_frame_time_s const* lhs,
     assert(NULL != lhs);
     assert(NULL != rhs);
     
-    return lhs->counter != rhs->counter;
+    return lhs->counter.QuadPart != rhs->counter.QuadPart;
 }
 
 
@@ -330,7 +330,7 @@ kaizen_bool kaizen_frame_time_greater(struct kaizen_raw_frame_time_s const* lhs,
     assert(NULL != lhs);
     assert(NULL != rhs);
     
-    return lhs->counter > rhs->counter;
+    return lhs->counter.QuadPart > rhs->counter.QuadPart;
 }
 
 
@@ -342,7 +342,7 @@ kaizen_bool kaizen_frame_time_greater_or_equal(struct kaizen_raw_frame_time_s co
     assert(NULL != lhs);
     assert(NULL != rhs);
     
-    return lhs->counter >= rhs->counter;
+    return lhs->counter.QuadPart >= rhs->counter.QuadPart;
 }
 
 
@@ -354,7 +354,7 @@ kaizen_bool kaizen_frame_time_lesser(struct kaizen_raw_frame_time_s const* lhs,
     assert(NULL != lhs);
     assert(NULL != rhs);
     
-    return lhs->counter < rhs->counter;
+    return lhs->counter.QuadPart < rhs->counter.QuadPart;
 }
 
 
@@ -366,7 +366,7 @@ kaizen_bool kaizen_frame_time_lesser_or_equal(struct kaizen_raw_frame_time_s con
     assert(NULL != lhs);
     assert(NULL != rhs);
     
-    return lhs->counter <= rhs->counter;
+    return lhs->counter.QuadPart <= rhs->counter.QuadPart;
 }
 
 

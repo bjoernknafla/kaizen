@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kaizen", "kaizen\kaizen.vcproj", "{6032B55E-4C70-4651-9508-0F3DC8595B8B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kaizen_unit_test", "kaizen_unit_test\kaizen_unit_test.vcproj", "{0FA9EA61-E36B-4E97-89E2-2381392D8027}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6032B55E-4C70-4651-9508-0F3DC8595B8B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6032B55E-4C70-4651-9508-0F3DC8595B8B}.Debug|Win32.Build.0 = Debug|Win32
+		{6032B55E-4C70-4651-9508-0F3DC8595B8B}.Release|Win32.ActiveCfg = Release|Win32
+		{6032B55E-4C70-4651-9508-0F3DC8595B8B}.Release|Win32.Build.0 = Release|Win32
+		{0FA9EA61-E36B-4E97-89E2-2381392D8027}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FA9EA61-E36B-4E97-89E2-2381392D8027}.Debug|Win32.Build.0 = Debug|Win32
+		{0FA9EA61-E36B-4E97-89E2-2381392D8027}.Release|Win32.ActiveCfg = Release|Win32
+		{0FA9EA61-E36B-4E97-89E2-2381392D8027}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -82,7 +82,7 @@
 #elif defined(KAIZEN_USE_POSIX_CLOCK_GETTIME)
 #   include <time.h>
 #elif defined(KAIZEN_USE_WIN32_QUERY_PERFORMANCE_COUNTER)
-#   // Nothing to do.
+#   include <windows.h>
 #else
 #   error Unsupported platform.
 #endif
@@ -119,7 +119,7 @@ extern "C" {
 #elif defined(KAIZEN_USE_POSIX_CLOCK_GETTIME)
         timespec time; 
 #elif defined(KAIZEN_USE_WIN32_QUERY_PERFORMANCE_COUNTER)
-        LARGE_INTEGER count;
+        LARGE_INTEGER counter;
 #else
 #   error Unsupported platform.
 #endif
